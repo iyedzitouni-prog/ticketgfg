@@ -161,4 +161,5 @@ setInterval(async () => {
 /* =============================================================== */
 
 process.on("unhandledRejection", console.error);
-client.login(config.token);
+client.login(process.env.TOKEN);
+
